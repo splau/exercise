@@ -88,7 +88,7 @@ public class RestSample {
 		testService.saveOrUpdate(test);
 		BaseResp resp = new BaseResp();
 		resp.setCode("200");
-		resp.setMessage("New Test has been added successfully");
+		resp.setMessage("New Test has been added successfully.");
 		return resp;
 	}
 	
@@ -99,7 +99,7 @@ public class RestSample {
 		testService.saveOrUpdate(test);
 		BaseResp resp = new BaseResp();
 		resp.setCode("200");
-		resp.setMessage("New Test has been update successfully");
+		resp.setMessage("New Test has been update successfully.");
 		return resp;
 	}
 	
@@ -109,7 +109,7 @@ public class RestSample {
 		if(test.getComments() == null || test.getComments().isEmpty() ) {
 			ErrorResp error = new ErrorResp();
 			error.setCode("500");
-			error.setMessage("Comment field is empty.");
+			error.setMessage("Comment field is empty, please enter the comment");
 			return error;
 		}
 		
@@ -138,7 +138,7 @@ public class RestSample {
 	//Task2 : Delete api
 	
 	//Task3: Test table 
-	  //Add additional two fields (Integer, Double)
+	 //Add additional two fields (Integer, Double)
 	
 
 }
