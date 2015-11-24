@@ -117,8 +117,9 @@ public class RestSample {
 		
 		BaseResp resp = new BaseResp();
 		resp.setCode("200");
-		if(test.getId() == null) resp.setMessage("New Test has been added successfully");
-		else resp.setMessage("New Test has been updated successfully");
+		if(test.getId() == null) 
+			resp.setMessage("New Test has been added successfully.");
+		else resp.setMessage("New Test has been updated successfully.");
 		return resp;
 	}
 	
